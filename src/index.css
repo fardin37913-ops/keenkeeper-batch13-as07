@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-keen-green: #2D4F43;
+  --color-keen-mint: #E6F4F1;
+  --color-keen-orange: #FBBF24;
+  --color-keen-red: #EF4444;
+  --color-keen-bg: #F9FAFB;
+  
+  --shadow-keen: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+@layer base {
+  body {
+    @apply font-sans text-gray-900 antialiased bg-white;
+  }
+}
+
+@layer components {
+  .keen-card {
+    @apply rounded-lg bg-white border border-gray-100 shadow-keen transition-all duration-200;
+  }
+
+  .keen-btn-primary {
+    @apply inline-flex items-center gap-2 rounded-md bg-keen-green px-4 py-2 text-sm font-semibold text-white transition-all hover:opacity-90 active:scale-95;
+  }
+
+  .keen-badge {
+    @apply rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-wider;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-200 rounded-full hover:bg-gray-300 transition-colors;
+}
+

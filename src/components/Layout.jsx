@@ -14,5 +14,6 @@ export const Layout = ({ children }) => {
       <Toaster position="bottom-right" richColors />
     </div>
   );
+  
 };
 

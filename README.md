@@ -23,7 +23,3 @@ KeenKeeper is a personal relationship management tool designed to help you nurtu
 
 The app uses local storage to persist your friend data and interaction history, making it a private and secure way to track your personal relationships.
 
-
-This is the best project in my proggraming life
-
-This is web app is very interesting

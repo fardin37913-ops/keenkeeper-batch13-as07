@@ -88,6 +88,7 @@ export const FriendDetails = () => {
               </div>
             </motion.div>
           </div>
+        
 
           {/* RIGHT COLUMN */}
           <div className="lg:col-span-8 space-y-8">

@@ -83,4 +83,3 @@ export const useFriends = () => {
   }
   return context;
 };
-
